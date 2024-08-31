@@ -1,0 +1,68 @@
+# Visual Studio project files
+*.vcxproj
+*.vcxproj.filters
+*.vcxproj.user
+
+# Debug directory
+.debug/
+
+# Binaries
+*.exe
+*.dll
+*.o
+*.obj
+
+# Visual Studio
+.vs/
+*.suo
+*.user
+*.ncb
+
+# Build output
+Debug/
+Release/
+
+# Backup and temporary files
+*~
+*.bak
+*.tmp
+
+# IntelliSense and other IDE-specific files
+*.ipch/
+*.sdf
+
+# OS generated files
+.DS_Store
+Thumbs.db
+# Prerequisites
+*.d
+
+# Compiled Object files
+*.slo
+*.lo
+*.o
+*.obj
+
+# Precompiled Headers
+*.gch
+*.pch
+
+# Compiled Dynamic libraries
+*.so
+*.dylib
+*.dll
+
+# Fortran module files
+*.mod
+*.smod
+
+# Compiled Static libraries
+*.lai
+*.la
+*.a
+*.lib
+
+# Executables
+*.exe
+*.out
+*.app
