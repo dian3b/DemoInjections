@@ -1,7 +1,10 @@
 项目名称：DLL 注入工具集说明文档
+
 一、概述
+
 本代码提供了多种不同的方法来实现将 DLL 注入到目标进程中，包括 注册表注入、APC（Asynchronous Procedure Call）注入、远程线程注入、RtlCreateUserThread 注入和窗口钩子注入。这些方法可用于在特定场景下将自定义的 DLL 加载到目标进程的地址空间中.
 二、包含的命名空间及功能
+
 APCTargetedInjection命名空间
 inject_dll_by_apc函数：通过将指定的 DLL 路径写入目标进程的内存空间，然后利用 APC（异步过程调用）机制将加载 DLL 的函数排队到目标进程的线程中，实现 DLL 注入。
 RemoteThreadInjection命名空间
@@ -13,6 +16,7 @@ inject_dll_by_set_windows_hook_ex函数：通过设置窗口钩子，加载包�
 RegistryInjection命名空间
 功能说明：通过修改注册表特定键值，使得系统在特定情况下自动加载指定的 DLL 到目标进程中。具体来说，可能是利用系统在加载某些关键模块时会检查特定注册表键值的特性。
 例如，可能修改与系统启动或特定模块加载相关的注册表项，将 DLL 的路径添加到其中。这样，当系统满足特定条件时，会自动加载该 DLL 到目标进程的地址空间中。
+
 
 三、主要函数说明
 
